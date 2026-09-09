@@ -15,6 +15,5 @@ Documentation = "https://github.com/bjoo46/dolphin-batch-queue#readme"
 "Bug Tracker" = "https://github.com/bjoo46/dolphin-batch-queue/issues"
 
 [tool.comfy]
-# Set to the actual Publisher ID after creating a Comfy Registry publisher.
-PublisherId = ""
+PublisherId = "vzoo"
 DisplayName = "Dolphin Batch Queue"
