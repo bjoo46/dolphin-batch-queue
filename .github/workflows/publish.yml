@@ -1,0 +1,29 @@
+name: Publish to Comfy Registry
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: registry-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -p test_dolphin_queue.py -v
+      - name: Require a configured publisher
+        run: |
+          python - <<'PY'
+          import pathlib, sys, tomllib
+          config = tomllib.loads(pathlib.Path('pyproject.toml').read_text())
+          if not config['tool']['comfy']['PublisherId'].strip():
+              sys.exit('Create a Registry publisher and set PublisherId before publishing.')
+          PY
+      - uses: Comfy-Org/publish-node-action@main
+        with:
+          personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}

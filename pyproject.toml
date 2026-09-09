@@ -1,0 +1,20 @@
+[project]
+name = "dolphin-batch-queue"
+version = "0.1.0"
+description = "Editable workflow batches for ComfyUI: pause, revise pending renders, and resume without losing per-item seeds or order."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "bjoo46" }]
+dependencies = ["aiohttp>=3.9"]
+classifiers = ["Operating System :: OS Independent"]
+
+[project.urls]
+Repository = "https://github.com/bjoo46/dolphin-batch-queue"
+Documentation = "https://github.com/bjoo46/dolphin-batch-queue#readme"
+"Bug Tracker" = "https://github.com/bjoo46/dolphin-batch-queue/issues"
+
+[tool.comfy]
+# Set to the actual Publisher ID after creating a Comfy Registry publisher.
+PublisherId = ""
+DisplayName = "Dolphin Batch Queue"

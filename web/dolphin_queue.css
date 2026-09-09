@@ -1,0 +1,22 @@
+.dq-panel,.dq-editor,.dq-capture{font-family:Inter,"Segoe UI",sans-serif;color:#e8edf4;box-sizing:border-box;font-size:13px}
+.dq-panel{width:100%;height:100%;min-width:0;min-height:0;background:#131a23;display:flex;flex-direction:column;overflow:auto}
+.dq-panel> :not(.dq-list){flex-shrink:0}
+.dq-panel [hidden]{display:none!important}
+.dq-head{display:flex;align-items:center;justify-content:space-between;padding:23px 24px 16px}
+.dq-eyebrow{display:block;font-size:10px;font-weight:600;letter-spacing:1.7px;color:#82bfc7;margin-bottom:7px}
+.dq-head h2{margin:0;font-size:25px;font-weight:600;letter-spacing:-1px}
+.dq-panel button,.dq-editor button{font:inherit;border:1px solid #3b4756;border-radius:8px;background:#222d3b;color:#ecf2f7;padding:9px 12px;cursor:pointer;white-space:nowrap}
+.dq-panel button:hover,.dq-editor button:hover{background:#344459}
+.dq-panel button:disabled,.dq-editor button:disabled{opacity:.35;cursor:default}
+.dq-panel button.dq-primary,.dq-editor button.dq-primary{background:#9edbd4;color:#122a2b;border-color:#9edbd4;font-weight:650}
+.dq-status{display:flex;align-items:center;gap:8px;margin:0 24px 15px;font-size:12px;color:#a8b5c5;flex-wrap:wrap}
+.dq-status strong{color:#e2e8ef;margin-right:auto}.dq-dot{width:7px;height:7px;border-radius:50%;background:#e4bb78}.dq-dot.active{background:#9edbd4}
+.dq-actions{display:flex;flex-wrap:wrap;gap:7px;padding:0 24px 18px;border-bottom:1px solid #2a3441}.dq-actions button{flex:1;font-size:12px;padding:9px 7px}
+.dq-add{display:grid;grid-template-columns:1fr 65px;gap:8px;padding:18px 24px 8px}.dq-add input{width:100%;min-width:0;background:#0d141c;color:#e8edf4;border:1px solid #354151;border-radius:8px;padding:10px;font:inherit;box-sizing:border-box}.dq-add button{grid-column:1/-1}
+.dq-panel :focus-visible,.dq-editor :focus-visible{outline:2px solid #9edbd4;outline-offset:3px}
+.dq-notice{margin:0 24px;color:#9edbd4;font-size:12px;line-height:1.6;overflow-wrap:anywhere;max-height:110px;overflow:auto}.dq-notice:not(:empty){padding:10px 0}
+.dq-list{flex:1;min-height:120px;overflow:auto;padding:12px 24px 20px;scrollbar-width:thin}.dq-empty{text-align:center;padding:36px 12px;color:#8f9eb0;line-height:1.8}.dq-empty>span{font-size:42px;color:#83b4bb}.dq-empty h3{font-size:16px;color:#dfe7ef}.dq-empty p{font-size:12px}
+.dq-card{border:1px solid #303c4c;background:#1b2430;border-radius:12px;padding:16px;margin-bottom:12px}.dq-card.dq-running{border-color:#80bdb7}.dq-card-head{display:flex;align-items:center;gap:10px}.dq-card-head strong{flex:1;overflow-wrap:anywhere;font-size:14px}.dq-number{color:#8aa8b8;font-size:12px;font-variant-numeric:tabular-nums}.dq-revision{font-size:10px;color:#91a0b2;background:#293646;padding:3px 6px;border-radius:4px}
+.dq-card progress{display:block;width:100%;height:4px;margin:16px 0 10px;accent-color:#9edbd4;border:0;border-radius:4px;overflow:hidden}.dq-card progress::-webkit-progress-bar{background:#344050}.dq-card progress::-webkit-progress-value{background:#9edbd4}.dq-meta{font-size:11px;color:#a0afc0}.dq-card-actions{display:flex;gap:8px;margin:14px 0}.dq-card-actions button{font-size:12px}.dq-card-actions .dq-quiet{margin-left:auto;border:0;background:none;color:#9cabbc}
+.dq-card summary{font-size:11px;color:#90a2b6;cursor:pointer;padding-top:4px}.dq-job{padding:12px 0;border-top:1px solid #303d4d;margin-top:8px;display:flex;flex-direction:column;gap:5px}.dq-job code{font-size:10px;color:#91a7bc;overflow-wrap:anywhere;line-height:1.6}.dq-state{font-size:11px}.dq-running .dq-state,.dq-done{color:#9edbd4}.dq-failed,.dq-uncertain,.dq-error{color:#f4b29c!important}.dq-job button{align-self:flex-start;font-size:11px}.dq-foot{font-size:11px;line-height:1.7;color:#91a0b1;padding:12px 24px;margin:0;border-top:1px solid #2a3441}
+.dq-editor{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 16px 16px;padding:14px;background:#172731;border:1px solid #7bafa9;border-radius:10px}.dq-editor>div:first-child{flex-basis:100%;min-width:0;overflow-wrap:anywhere}.dq-editor strong{display:block;font-size:15px}.dq-editor small{display:block;color:#a4b6c5;margin-top:5px}.dq-editor-error{flex-basis:100%;font-size:12px;color:#f4b29c;max-height:120px;overflow:auto;overflow-wrap:anywhere}.dq-editor-error:empty{display:none}.dq-busy button{pointer-events:none;opacity:.5}.dq-capture{position:fixed;inset:0;z-index:10000;background:#101923ed;display:grid;place-items:center;font-size:20px}

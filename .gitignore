@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.dolphin_queue/
+.env
+.env.*
+.venv/
+*.log
