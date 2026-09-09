@@ -15,9 +15,13 @@ Editable workflow batches in the ComfyUI sidebar. Queue six different workflows 
 
 ## Install
 
-This is an initial **0.1.0** release. Registry listing is pending publisher setup; Manager search installation is not available yet.
+Version **0.1.0** is published on [Comfy Registry](https://registry.comfy.org/publishers/vzoo/nodes/dolphin-batch-queue) under publisher **aidispo (@vzoo)**.
 
-Clone into `ComfyUI/custom_nodes`:
+```sh
+comfy node install dolphin-batch-queue
+```
+
+Alternatively, clone into `ComfyUI/custom_nodes`:
 
 ```sh
 git clone https://github.com/bjoo46/dolphin-batch-queue.git

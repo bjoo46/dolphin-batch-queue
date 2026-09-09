@@ -1,5 +1,7 @@
 # Dolphin 배치 큐
 
+[Comfy Registry](https://registry.comfy.org/ko/publishers/vzoo/nodes/dolphin-batch-queue)에 **aidispo (@vzoo)** 명의로 **0.1.0**이 게시되었습니다. Comfy CLI에서는 `comfy node install dolphin-batch-queue`로 설치할 수 있습니다.
+
 ComfyUI를 재시작하고 브라우저를 새로고침하면 기본 사이드바에 시계 아이콘의 **배치 큐** 탭이 표시됩니다. 기존 설치에서 사이드바 UI 변경만 적용할 때는 브라우저 새로고침으로 충분합니다.
 
 - 워크플로우를 열고 배치 이름과 개수를 입력해 **현재 워크플로우 예약**을 누릅니다. 워크플로우 6개를 각각 5개씩 예약하면 6개 배치, 30개 항목으로 관리합니다. 시드는 ComfyUI의 기존 fixed/increment/randomize 동작으로 확정됩니다.
